@@ -16,4 +16,15 @@ class Point {
     public double getY() {
         return y;
     }
+    public boolean similar(Point point)
+    {
+        if(point.x == this.x && point.y == this.y)
+            return true;
+        else return false;
+    }
+    public String toString() {
+        return String.format("(%d;%d)", x, y);
+    }
+
+
 }
